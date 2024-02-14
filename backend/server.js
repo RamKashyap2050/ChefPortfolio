@@ -3,12 +3,14 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
 const path = require("path");
+const bodyParser = require("body-parser");
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use(bodyParser.json({ limit: "50mb" }));
 
 const PORT = process.env.PORT || 3000;
 console.log(process.env.NODE_ENV);
