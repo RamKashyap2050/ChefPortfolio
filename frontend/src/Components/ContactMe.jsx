@@ -79,7 +79,7 @@ const ContactMe = () => {
           gutterBottom
           style={{ color: "#52b69a", fontStyle: "italic" }}
         >
-          Get in Touch 
+          Get in Touch
         </Typography>
 
         {/* Snackbar to show a confirmation message */}
