@@ -11,7 +11,7 @@ const UserFooter = () => {
           <div className="col-md-6 text-md-left mb-3">
             <h4>Contact Information</h4>
             <p>
-              <strong>Email:</strong> Vithurakan@gmail.com
+              <strong>Email:</strong> hanishavithu@gmail.com
               <br />
               <strong>Phone:</strong> +1 (514) 662 6519
             </p>
