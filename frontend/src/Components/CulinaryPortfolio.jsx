@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import UserFooter from "./UserFooter";
 import UserHeader from "./UserHeader";
 import Testimonials from "./Testimonials";
+import Certifications from "./Certifications";
 
 const CulinaryPortfolio = () => {
   const settings = {
@@ -18,13 +19,23 @@ const CulinaryPortfolio = () => {
   return (
     <>
       <UserHeader />
-      <Container style={{ paddingTop: 40, marginBottom:"5rem" }}>
-        <Typography variant="h4" gutterBottom style={{margin:'auto', textAlign:"center"}}>
+      <Container style={{ paddingTop: 40, marginBottom: "5rem" }}>
+        <Typography
+          variant="h4"
+          gutterBottom
+          style={{ margin: "auto", textAlign: "center" }}
+        >
           Culinary Portfolio
         </Typography>
         <div className="crd">
           {/* Card 1: Sandwiches */}
-          <Card style={{ width: "350px", marginRight: "1rem", marginBottom:"1rem" }}>
+          <Card
+            style={{
+              width: "350px",
+              marginRight: "1rem",
+              marginBottom: "1rem",
+            }}
+          >
             <CardContent>
               <Slider {...settings}>
                 <img
@@ -54,7 +65,13 @@ const CulinaryPortfolio = () => {
           </Card>
 
           {/* Card 2: Steaks */}
-          <Card style={{ width: "350px", marginRight:"1rem", marginBottom:"1rem" }}>
+          <Card
+            style={{
+              width: "350px",
+              marginRight: "1rem",
+              marginBottom: "1rem",
+            }}
+          >
             <CardContent>
               <Slider {...settings}>
                 <img
@@ -114,6 +131,7 @@ const CulinaryPortfolio = () => {
         </div>
       </Container>
       <Testimonials />
+      <Certifications />
       <UserFooter />
     </>
   );
